@@ -8,7 +8,6 @@
         :root { --primary: #0366d6; --bg: #f6f8fa; --text: #24292e; --border: #e1e4e8; --sidebar-bg: #ffffff; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); margin: 0; display: flex; min-height: 100vh; background: var(--bg); }
         
-        /* Sidebar Styles */
         nav { width: 280px; background: var(--sidebar-bg); border-right: 1px solid var(--border); padding: 2rem 1.5rem; flex-shrink: 0; position: sticky; top: 0; height: 100vh; box-sizing: border-box; overflow-y: auto; }
         nav h2 { font-size: 0.75rem; color: #6a737d; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1.5rem; padding-left: 0.75rem; }
         nav ul { list-style: none; padding: 0; margin: 0; }
@@ -17,19 +16,17 @@
         nav a:hover { background: #f1f8ff; color: var(--primary); }
         nav a.active { background: #f1f8ff; color: var(--primary); font-weight: 600; border-left: 3px solid var(--primary); border-radius: 0 6px 6px 0; }
 
-        /* Main Content Styles */
         main { flex-grow: 1; padding: 3rem 4rem; max-width: 1200px; }
         header { margin-bottom: 3rem; }
         header h1 { font-size: 2.2rem; font-weight: 800; margin: 0; color: #000; letter-spacing: -0.5px; }
         header p { color: #6a737d; font-size: 1.1rem; margin-top: 0.5rem; }
 
         .repo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; position: relative; }
+        .repo-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); display: flex; flex-direction: column; text-decoration: none; color: inherit; }
         .repo-card:hover { transform: translateY(-5px); border-color: var(--primary); box-shadow: 0 15px 35px rgba(0,0,0,0.08); }
         .repo-name { color: var(--primary); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.75rem; word-break: break-all; }
         .repo-desc { font-size: 0.95rem; color: #586069; line-height: 1.5; margin-bottom: 1.5rem; flex-grow: 1; }
-        .repo-footer { display: flex; align-items: center; justify-content: space-between; }
-        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; }
+        .tag { font-size: 0.65rem; background: #f1f8ff; color: var(--primary); padding: 3px 10px; border-radius: 20px; font-weight: 700; text-transform: uppercase; border: 1px solid #c8e1ff; align-self: flex-start; }
 
         @media (max-width: 1000px) { main { padding: 2rem; } }
         @media (max-width: 800px) { body { flex-direction: column; } nav { width: 100%; height: auto; position: relative; border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem; } nav ul { display: flex; flex-wrap: wrap; gap: 0.5rem; } nav li { margin: 0; } }
@@ -53,98 +50,98 @@
     <main>
         <header>
             <h1>ORGAN-I (Theoria)</h1>
-            <p>Integrated repository directory for the <strong>organvm-i-theoria</strong> collective.</p>
+            <p>Comprehensive repository directory for the <strong>organvm-i-theoria</strong> collective.</p>
         </header>
         <div class="repo-grid">
-            <a href="/.github/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/.github" class="repo-card">
                 <span class="repo-name">.github</span>
                 <p class="repo-desc">Organization-wide CI/CD, AI agents, and community health files.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/a-recursive-root/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/a-recursive-root" class="repo-card">
                 <span class="repo-name">a-recursive-root</span>
                 <p class="repo-desc">Foundational recursive principles.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/auto-revision-epistemic-engine/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/auto-revision-epistemic-engine" class="repo-card">
                 <span class="repo-name">auto-revision-epistemic-engine</span>
                 <p class="repo-desc">Self-governing orchestration framework with 8 phases, 4 human review gates, BLAKE3 audit chain, and ethical axiom enforcement.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/call-function--ontological/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/call-function--ontological" class="repo-card">
                 <span class="repo-name">call-function--ontological</span>
                 <p class="repo-desc">Ontological function-calling framework — 12-concept philosophical architecture for grounded AI tool use via Heideggerian Dasein, Aristotelian four causes, and Peircean semiotics.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/cognitive-archaelogy-tribunal/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/cognitive-archaelogy-tribunal" class="repo-card">
                 <span class="repo-name">cognitive-archaelogy-tribunal</span>
                 <p class="repo-desc">Audit tool for cognitive systems and organizational coherence.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/linguistic-atomization-framework/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/linguistic-atomization-framework" class="repo-card">
                 <span class="repo-name">linguistic-atomization-framework</span>
                 <p class="repo-desc">LingFrame — computational rhetoric platform: hierarchical text atomization, 6 analysis modules, 46-text multilingual corpus, interactive visualizations.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/meta-source--ledger-output/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/meta-source--ledger-output" class="repo-card">
                 <span class="repo-name">meta-source--ledger-output</span>
-                <p class="repo-desc">Systems and specifications for the organvm-i-theoria ecosystem.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <p class="repo-desc">Systems and core specifications for the organvm-i-theoria ecosystem.</p>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/my-knowledge-base/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/my-knowledge-base" class="repo-card">
                 <span class="repo-name">my-knowledge-base</span>
                 <p class="repo-desc">Knowledge atomization system: exports Claude conversations, decomposes into semantic units with vector search and intelligence extraction.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/narratological-algorithmic-lenses/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/narratological-algorithmic-lenses" class="repo-card">
                 <span class="repo-name">narratological-algorithmic-lenses</span>
                 <p class="repo-desc">14 narratological studies × 92 algorithms — formalizing narrative principles from Aristotle to Pixar as executable code, with CLI, API, web dashboard, and real screenplay analysis.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/nexus--babel-alexandria/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/nexus--babel-alexandria" class="repo-card">
                 <span class="repo-name">nexus--babel-alexandria</span>
                 <p class="repo-desc">Theoria Linguae Machina — 50,000-word design document for a nine-layer rhetorical-linguistic operating system grounded in category theory, Peircean semiotics, and Aristotelian rhetoric.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/organon-noumenon--ontogenetic-morphe/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/organon-noumenon--ontogenetic-morphe" class="repo-card">
                 <span class="repo-name">organon-noumenon--ontogenetic-morphe</span>
                 <p class="repo-desc">Ontogenetic Morphe — 22-subsystem symbolic processing architecture with recursive 4-phase process loops, async message bus, and typed symbolic values.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/organvm-i-theoria--superproject/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/organvm-i-theoria--superproject" class="repo-card">
                 <span class="repo-name">organvm-i-theoria--superproject</span>
                 <p class="repo-desc">Superproject tracking submodules for organvm-i-theoria.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/radix-recursiva-solve-coagula-redi/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/radix-recursiva-solve-coagula-redi" class="repo-card">
                 <span class="repo-name">radix-recursiva-solve-coagula-redi</span>
                 <p class="repo-desc">Recursive root solving and alchemical cycles.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/recursive-engine--generative-entity/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/recursive-engine--generative-entity" class="repo-card">
                 <span class="repo-name">recursive-engine--generative-entity</span>
                 <p class="repo-desc">RE:GE — A symbolic operating system for myth, identity, ritual, and recursive systems.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/reverse-engine-recursive-run/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/reverse-engine-recursive-run" class="repo-card">
                 <span class="repo-name">reverse-engine-recursive-run</span>
                 <p class="repo-desc">Architecture governance toolkit — 7-script Python pipeline for risk scoring, drift detection, ownership analysis, and SBOM generation across any codebase.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/scalable-lore-expert/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/scalable-lore-expert" class="repo-card">
                 <span class="repo-name">scalable-lore-expert</span>
                 <p class="repo-desc">Ontological knowledge management system applying Dante's epistemological framework to narrative universe modeling.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/sema-metra--alchemica-mundi/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/sema-metra--alchemica-mundi" class="repo-card">
                 <span class="repo-name">sema-metra--alchemica-mundi</span>
                 <p class="repo-desc">Three-engine alchemical transformation framework — 22 operations mapping classical alchemy (Nigredo→Rubedo) onto computational semantics via distillation, fermentation, and projection engines.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
-            <a href="/system-governance-framework/" class="repo-card">
+            <a href="https://github.com/organvm-i-theoria/system-governance-framework" class="repo-card">
                 <span class="repo-name">system-governance-framework</span>
                 <p class="repo-desc">Multi-organ governance rules and promotion criteria.</p>
-                <div class="repo-footer"><span class="tag">Live Documentation</span></div>
+                <div class="repo-footer"><span class="tag">Live Docs</span></div>
             </a>
         </div>
         <footer style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid var(--border); color: #999; font-size: 0.8rem; text-align: center;">
